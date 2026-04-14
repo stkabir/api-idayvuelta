@@ -4,6 +4,9 @@ set -e
 echo "==> Descubriendo paquetes..."
 php artisan package:discover --ansi
 
+echo "==> Actualizando assets de Filament..."
+php artisan filament:upgrade
+
 echo "==> Generando APP_KEY si no existe..."
 php artisan key:generate --no-ansi 2>/dev/null || true
 

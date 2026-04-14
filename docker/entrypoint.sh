@@ -5,7 +5,7 @@ echo "==> Descubriendo paquetes..."
 php artisan package:discover --ansi
 
 echo "==> Generando APP_KEY si no existe..."
-php artisan key:generate --force
+php artisan key:generate --no-ansi 2>/dev/null || true
 
 echo "==> Ejecutando migraciones..."
 php artisan migrate --force

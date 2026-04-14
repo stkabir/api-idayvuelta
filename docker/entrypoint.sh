@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+echo "==> Descubriendo paquetes..."
+php artisan package:discover --ansi
+
 echo "==> Generando APP_KEY si no existe..."
 php artisan key:generate --force
 

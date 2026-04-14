@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
 
 class DemoDataSeeder extends Seeder
 {
@@ -12,14 +13,19 @@ class DemoDataSeeder extends Seeder
      */
     public function run(): void
     {
-        // Crear usuario admin
-        \App\Models\User::firstOrCreate(
+        // Crear rol admin
+        $adminRole = Role::firstOrCreate(['name' => 'admin', 'guard_name' => 'web']);
+
+        // Crear usuario admin y asignar rol
+        $admin = \App\Models\User::firstOrCreate(
             ['email' => 'admin@booking.com'],
             [
                 'name' => 'Admin',
                 'password' => bcrypt('password'),
             ]
         );
+
+        $admin->assignRole($adminRole);
 
         // Crear hoteles de ejemplo
         \App\Models\Hotel::create([

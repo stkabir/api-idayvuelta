@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan migrate)",
+      "Bash(php artisan optimize:clear)",
+      "Bash(php artisan route:list --path=api/v1)",
+      "Bash(php artisan route:list)"
+    ]
+  }
+}

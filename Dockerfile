@@ -24,13 +24,7 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
         bcmath \
         gd \
         zip \
-        intl \
-        fileinfo \
-        tokenizer \
-        ctype \
-        xml \
-        xmlreader \
-        dom
+        intl
 
 # Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer

@@ -628,9 +628,9 @@
               <div class="step-title">Escribe la dirección del panel</div>
               <div class="step-desc">En la barra de direcciones (la franja larga arriba donde dice qué página estás viendo), escribe exactamente:</div>
               <div style="margin-top: 10px; background: var(--code-bg); border-radius: 8px; padding: 12px 18px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--cyan);">
-                http://localhost:8000/admin
+                https://api.idayvueltamx.com/admin
               </div>
-              <div class="step-desc" style="margin-top: 8px;">Si el sitio está en un servidor real (no en tu computadora), la dirección será algo como <code>https://bookingcaribe.com/admin</code> — pregúntale a quien te dio el acceso cuál es la dirección correcta.</div>
+              <div class="step-desc" style="margin-top: 8px;">Si el sitio está en un servidor real (no en tu computadora), la dirección será algo como <code>https://api.idayvueltamx.com/admin</code> — pregúntale a quien te dio el acceso cuál es la dirección correcta.</div>
             </div>
           </div>
           <div class="step">
@@ -1556,7 +1556,7 @@
               </tr>
               <tr>
                 <td><span class="field-name">Site URL</span></td>
-                <td><span class="field-desc">La dirección principal de tu sitio web. Ejemplo: "https://bookingcaribe.com".</span></td>
+                <td><span class="field-desc">La dirección principal de tu sitio web. Ejemplo: "https://idayvueltamx.com".</span></td>
               </tr>
             </tbody>
           </table>
@@ -1677,7 +1677,7 @@
               </tr>
               <tr>
                 <td><span class="field-name">Email</span></td>
-                <td><span class="field-desc">El correo electrónico de contacto. Ejemplo: "reservas@bookingcaribe.com".</span></td>
+                <td><span class="field-desc">El correo electrónico de contacto. Ejemplo: "reservas@idayvueltamx.com".</span></td>
               </tr>
               <tr>
                 <td><span class="field-name">Address</span></td>

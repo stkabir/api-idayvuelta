@@ -589,7 +589,7 @@
 
         <div class="intro-box">
           <p><strong>¿Qué es el panel de administración?</strong><br>
-          Es el lugar desde donde tú управляешь todo el contenido de la plataforma web. Imagina que es como el "cuarto trasero" de una tienda física: desde ahí puedes colocar productos en los estantes (en este caso, hoteles, tours y traslados), ver los pedidos que llegan (reservas), cobrar el dinero (pagos) y cambiar los precios o la descripción de lo que vendes.</p>
+          Es el lugar desde donde tú administras todo el contenido de la plataforma web. Imagina que es como el "cuarto trasero" de una tienda física: desde ahí puedes colocar productos en los estantes (en este caso, hoteles, tours y traslados), ver los pedidos que llegan (reservas), cobrar el dinero (pagos) y cambiar los precios o la descripción de lo que vendes.</p>
           <br>
           <p><strong>¿Qué puedes hacer desde aquí?</strong></p>
           <ul style="margin-left: 20px; margin-top: 8px; display: flex; flex-direction: column; gap: 4px;">
@@ -715,7 +715,7 @@
         </div>
 
         <div class="intro-box" style="margin-bottom: 24px;">
-          La sección de <strong>Hoteles</strong> es donde gestionas todos los establecimientos de alojamiento que ofreces en tu plataforma. Cada registro representa un hotel, resort o любой другой тип de hospedaje.
+          La sección de <strong>Hoteles</strong> es donde gestionas todos los establecimientos de alojamiento que ofreces en tu plataforma. Cada registro representa un hotel, resort o cualquier otro tipo de hospedaje.
         </div>
 
         <div class="subsection">
@@ -754,7 +754,7 @@
               <div class="step-num">5</div>
               <div class="step-content">
                 <div class="step-title">Haz clic en "Guardar" o "Save"</div>
-                <div class="step-desc">Cuando termines de llenos todos los campos, busca el botón para guardar. El hotel aparecerá en la lista.</div>
+                <div class="step-desc">Cuando termines de llenar todos los campos, busca el botón para guardar. El hotel aparecerá en la lista.</div>
               </div>
             </div>
           </div>
@@ -867,7 +867,7 @@
               <div class="step-num">3</div>
               <div class="step-content">
                 <div class="step-title">Haz clic en la fila del hotel</div>
-                <div class="step-desc">Generalmente se hace clic en el texto del hotel o en un botón de lápiz/lápiz que aparece al pasar el mouse sobre la fila.</div>
+                <div class="step-desc">Generalmente se hace clic en el texto del hotel o en un botón de lápiz que aparece al pasar el mouse sobre la fila.</div>
               </div>
             </div>
             <div class="step">
@@ -1041,7 +1041,7 @@
         </div>
 
         <div class="intro-box" style="margin-bottom: 24px;">
-          La sección de <strong>Traslados</strong> gestiona los servicios de transporte, ya sea del aeropuerto a los hoteles o entre cualquieras dos ubicaciones. Puede ser privado (solo para ti) o compartido con otros pasajeros.
+          La sección de <strong>Traslados</strong> gestiona los servicios de transporte, ya sea del aeropuerto a los hoteles o entre cualesquiera dos ubicaciones. Puede ser privado (solo para ti) o compartido con otros pasajeros.
         </div>
 
         <div class="subsection">
@@ -1772,7 +1772,7 @@
             </div>
             <div class="limit-item">
               <div class="limit-icon">❌</div>
-              <div class="limit-text"><strong>No se reciben correos de confirmación automáticos</strong> — Cuando un cliente hace una reserva desde la página web, NO recibe ningún correo electrónico de confirmación. El administrador tiene que contactar al cliente manualmente.</div>
+              <div class="limit-text"><strong>No se reciben correos de confirmación automáticos</strong> — Cuando un cliente hace una reserva desde la página web, no recibe correo electrónico de confirmación. El administrador tiene que contactar al cliente manualmente.</div>
             </div>
             <div class="limit-item">
               <div class="limit-icon">❌</div>

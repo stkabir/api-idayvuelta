@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3730c9f867dd35de1d3d55e5d4582b49",
+    "content-hash": "e78af40bafb6be8b12891e8fd3fa4468",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3951,6 +3951,58 @@
                 }
             ],
             "time": "2026-02-16T23:10:27+00:00"
+        },
+        {
+            "name": "openpay/sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-pay/openpay-php.git",
+                "reference": "5a922d4e95e6c68c37c6e558e33b6f7e4918f398"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-pay/openpay-php/zipball/5a922d4e95e6c68c37c6e558e33b6f7e4918f398",
+                "reference": "5a922d4e95e6c68c37c6e558e33b6f7e4918f398",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-hash": "*",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Openpay\\": "Openpay/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Openpay",
+                    "email": "soporte@openpay.mx",
+                    "homepage": "https://www.openpay.mx/"
+                },
+                {
+                    "name": "Federico Balderas",
+                    "email": "plugins@openpay.mx",
+                    "homepage": "https://openpay.mx/"
+                }
+            ],
+            "description": "This is a client implementing the payment services for Openpay at openpay.mx",
+            "support": {
+                "issues": "https://github.com/open-pay/openpay-php/issues",
+                "source": "https://github.com/open-pay/openpay-php/tree/3.1.1"
+            },
+            "time": "2024-10-28T22:15:37+00:00"
         },
         {
             "name": "openspout/openspout",
@@ -10668,7 +10720,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "openpay/sdk": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

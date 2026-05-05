@@ -37,9 +37,12 @@ class TransferResource extends Resource
                 Forms\Components\TextInput::make('to_location')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('type')
+                Forms\Components\Select::make('type')
                     ->required()
-                    ->maxLength(255),
+                    ->options([
+                        'one_way' => 'One Way',
+                        'round_trip' => 'Round Trip',
+                    ]),
                 Forms\Components\TextInput::make('vehicle_type')
                     ->required()
                     ->maxLength(255),
@@ -73,7 +76,17 @@ class TransferResource extends Resource
                 Tables\Columns\TextColumn::make('to_location')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('type')
-                    ->searchable(),
+                    ->badge()
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        'one_way' => 'One Way',
+                        'round_trip' => 'Round Trip',
+                        default => $state,
+                    })
+                    ->color(fn (string $state): string => match ($state) {
+                        'one_way' => 'info',
+                        'round_trip' => 'success',
+                        default => 'gray',
+                    }),
                 Tables\Columns\TextColumn::make('vehicle_type')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('max_passengers')

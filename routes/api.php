@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\V1\BannerController;
 use App\Http\Controllers\Api\V1\BookingController;
 use App\Http\Controllers\Api\V1\HotelController;
@@ -55,3 +56,21 @@ Route::get('/tours/{slug}', fn (string $slug) => redirect()->to("/api/v1/tours/{
 Route::get('/transfers', fn () => redirect()->to('/api/v1/transfers' . (request()->getQueryString() ? '?' . request()->getQueryString() : '')));
 Route::get('/transfers/{slug}', fn (string $slug) => redirect()->to("/api/v1/transfers/{$slug}"));
 Route::get('/banners', fn () => redirect()->to('/api/v1/banners' . (request()->getQueryString() ? '?' . request()->getQueryString() : '')));
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Openpay Payments
+// ─────────────────────────────────────────────────────────────────────────────
+
+Route::prefix('payments')->group(function () {
+    // Config pública (para inicializar Openpay.js)
+    Route::get('/config', [PaymentController::class, 'getConfig']);
+
+    // Webhook para confirmaciones asíncronas de OpenPay
+    Route::post('/webhook', [PaymentController::class, 'handleWebhook']);
+
+    // Procesar pago (requiere autenticación)
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('/process', [PaymentController::class, 'processCardPayment']);
+        Route::get('/{payment}', [PaymentController::class, 'show']);
+    });
+});
